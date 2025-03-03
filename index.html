@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HV Stiven Layos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: #292a3c;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 1rem 0;
+            font-weight: normal;
+        }
+
+        .dark-content {
+            background-color: #353535;
+            color: #ffffff;
+        }
+
+        .light-content {
+            background-color: #ffffff;
+        }
+
+        .dark-content,
+        .light-content {
+            padding: 1.5rem;
+            margin: 0.5rem;
+            padding-bottom: 0;
+        }
+
+        .round-border {
+            border-radius: 10px;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .flex-fill {
+            -ms-flex: 1 1 auto !important;
+            flex: 1 1 auto !important;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .w-80 {
+            width: 80%;
+        }
+
+        .w-75 {
+            width: 75%;
+        }
+
+        .w-60 {
+            width: 60%;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .w-40 {
+            width: 40%;
+        }
+
+        .w-25 {
+            width: 25%;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .bar-border {
+            border: 1px solid #e5e5e5;
+            max-height: 15px;
+        }
+
+        .bar-content {
+            background-color: gray;
+            height: 15px;
+            background: #2193b0;
+            background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+        }
+
+        .bar-border,
+        .bar-content {
+            border-radius: 10px;
+        }
+
+        div#languages p {
+            margin-right: 0.5rem;
+        }
+
+        div#languages label,
+        div#skills label {
+            margin: 1rem 0rem;
+        }
+
+        .item-center {
+            align-items: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            border-radius: 50%;
+
+            background: linear-gradient(315deg, #37d5d6 0%, #36096d 75%);
+            padding: 10px;
+        }
+
+        div#professionalProfile,
+        div#contentImage {
+            margin: 0.5rem;
+            padding: 1.5rem;
+            color: #ffffff;
+        }
+
+        .tag-info {
+            background: #ffff;
+            color: #000;
+            border-radius: 20px;
+            margin-left: 10px;
+            padding: 10px;
+        }
+
+        div#phoneContent,
+        div#socialNetworks,
+        div#emailContent,
+        div#locationContent {
+            align-items: center;
+        }
+
+        .contact-info-image {
+            background: linear-gradient(315deg, #37d5d6 0%, #36096d 75%);
+            padding: 5px;
+            border-radius: 50%;
+            margin: 0px 5px;
+        }
+
+        ul {
+            margin-top: 2rem;
+        }
+
+        ul li {
+            margin: 0rem 2rem 2rem 2rem;
+        }
+
+        div#educationInfo,
+        div#experience,
+        div#certificates {
+            flex-direction: column;
+            margin-bottom: 0.5rem;
+        }
+
+        .title-tag {
+            padding: 10px 40px;
+            background: #2193b0;
+            background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            border-radius: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex" style="height: 200px;padding: 1.5rem;margin: 0.5rem;padding-top: 0;margin-top: 0;">
+        <div id="contentImage" class="flex-fill w-40" style="text-align: center;">
+            <img class="profile-image" src="https://www.w3schools.com/howto/img_avatar.png" />
+        </div>
+        <div id="professionalProfile" class="flex-fill w-60">
+            <h3><b>PERFIL PROFESIONAL:</b></h3>
+            <P>Soy una persona dinámica y creativa, habituada al trabajo bajo presión.
+                Tengo experiencia como desarrollador de software en aplicaciones web, móviles y de escritorio muy buenas
+                relaciones interpersonales, por lo cual se me facilita el trabajo en equipo.
+                me gusta demostrar mis habilidades aportando valor agregado a la empresa y
+                ayudando a la resolución de problemas al interior de ella.</P>
+        </div>
+    </div>
+    <div class="dark-content d-flex">
+        <div id="personalInfo" class="flex-fill w-40 text-center">
+            <h2>Dairon Stivens Layos Rico</h2>
+            <h3>Tecnólogo Desarrollo de Software</h3>
+            <h5>
+                Edad:
+                <span id="age"></span>
+            </h5>
+        </div>
+        <div id="contactInfo" class="flex-fill w-60">
+            <div style="display: flex; flex-direction: column;">
+                <div class="d-flex" style="margin: 10px 0;">
+                    <div id="emailContent" class="d-flex w-100">
+                        <img class="contact-info-image" src="img/email.svg" width="30" />
+                        <label class="w-75 tag-info">stivenlayos1992@hotmail.com</label>
+                    </div>
+                    <div id="locationContent" class="d-flex w-100">
+                        <img class="contact-info-image" src="img/marcador-de-posicion.svg" width="30" />
+                        <label class="w-75 tag-info">Antioquia-Colombia</label>
+                    </div>
+                </div>
+                <div class="d-flex" style="margin: 10px 0;">
+                    <div id="phoneContent" class="d-flex w-100">
+                        <img class="contact-info-image" src="img/telefono-inteligente.svg" width="30" />
+                        <label class="w-75 tag-info">+57 302 4212317</label>
+                    </div>
+                    <div id="socialNetworks" class="w-100">
+                        <a href="https://www.linkedin.com/in/stiven-layos/" target="_blank">
+                            <img class="contact-info-image" src="img/linkedin.svg" width="30" />
+                        </a>
+                        <a href="#">
+                            <img class="contact-info-image" src="img/facebook.svg" width="30" />
+                        </a>
+                        <a href="#">
+                            <img class="contact-info-image" src="img/instagram.svg" width="30" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex">
+        <div class="dark-content round-border flex-fill w-40">
+            <div id="languages">
+                <h3><b>IDIOMAS:</b></h3>
+                <label class="d-flex">
+                    <p><b>ES:</b></p>
+                    <div class="bar-border w-100">
+                        <div class="bar-content w-100"></div>
+                    </div>
+                </label>
+                <label class="d-flex">
+                    <p><b>EN:</b></p>
+                    <div class="bar-border w-100">
+                        <div class="bar-content w-25"></div>
+                    </div>
+                </label>
+            </div>
+            <div id="skills">
+                <h3><b>HABILIDADES:</b></h3>
+
+                <h4><b>DBMS:</b></h4>
+                <label class="d-flex item-center">
+                    <p class="w-40">Microsoft SQL Server:</p>
+                    <div class="bar-border w-60">
+                        <div class="bar-content w-75"></div>
+                    </div>
+                </label>
+
+                <h4><b>Lenguajes:</b></h4>
+                <label class="d-flex">
+                    <p class="w-40">HTML & CSS:</p>
+                    <div class="bar-border w-60">
+                        <div class="bar-content w-80"></div>
+                    </div>
+                </label>
+                <label class="d-flex">
+                    <p class="w-40">C#:</p>
+                    <div class="bar-border w-60">
+                        <div class="bar-content w-75"></div>
+                    </div>
+                </label>
+                <label class="d-flex item-center">
+                    <p class="w-40">Visual Basic. NET:</p>
+                    <div class="bar-border w-60">
+                        <div class="bar-content w-50"></div>
+                    </div>
+                </label>
+                <label class="d-flex item-center">
+                    <p class="w-40">Javascript:</p>
+                    <div class="bar-border w-60">
+                        <div class="bar-content w-75"></div>
+                    </div>
+                </label>
+                <label class="d-flex item-center">
+                    <p class="w-40">TypeScript:</p>
+                    <div class="bar-border w-60">
+                        <div class="bar-content w-40"></div>
+                    </div>
+                </label>
+                <label class="d-flex item-center">
+                    <p class="w-40">SQL:</p>
+                    <div class="bar-border w-60">
+                        <div class="bar-content w-75"></div>
+                    </div>
+                </label>
+
+                <h4><b>Software:</b></h4>
+                <label class="d-flex item-center">
+                    <p class="w-40">Visual Studio:</p>
+                    <div class="bar-border w-60">
+                        <div class="bar-content w-80"></div>
+                    </div>
+                </label>
+                <label class="d-flex item-center">
+                    <p class="w-40">Visual Studio Code:</p>
+                    <div class="bar-border w-60">
+                        <div class="bar-content w-75"></div>
+                    </div>
+                </label>
+                <label class="d-flex item-center">
+                    <p class="w-40">Android Studio:</p>
+                    <div class="bar-border w-60">
+                        <div class="bar-content w-50"></div>
+                    </div>
+                </label>
+                <label class="d-flex item-center">
+                    <p class="w-40">MS Excel:</p>
+                    <div class="bar-border w-60">
+                        <div class="bar-content w-75"></div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="light-content round-border flex-fill w-60">
+            <div id="educationInfo" class="d-flex">
+                <label class="title-tag"><b>EDUCACIÓN</b></label>
+                <ul>
+                    <li>
+                        <div class="d-flex">
+                            <label style="width: 150px;"><b>2015</b></label>
+                            <p>
+                                <b>Nivel Superior</b>
+                                <br>
+                                Instituto Tecnológico Pascual Bravo
+                                <br>
+                                (Medellin - Antioquia)
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="experience" class="d-flex">
+                <label class="title-tag"><b>EXPERIENCIA</b></label>
+                <ul>
+                    <li>
+                        <div class="d-flex">
+                            <label style="width: 150px;"><b>2015 - 2019</b></label>
+                            <p>
+                                <b>Software Estratégico</b>
+                                <br>
+                                Analista de soluciones
+                                <br>
+                                (Sabaneta - Antioquia)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex">
+                            <label style="width: 150px;"><b>2019</b></label>
+                            <p>
+                                <b>Globo Studio</b>
+                                <br>
+                                Analista de Desarrollo
+                                <br>
+                                (Medellin - Antioquia)
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="certificates" class="d-flex">
+                <label class="title-tag"><b>CERTIFICADOS</b></label>
+                <ul>
+                    <li>
+                        <div class="d-flex">
+                            <label style="width: 150px;"><b>2020</b></label>
+                            <p>
+                                <b>AZ-900-Azure Fundamentals</b>
+                                <br>
+                                Microsoft
+                                <br>
+                                (Medellin - Antioquia)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var ageDifMs = new Date() - new Date('1992-12-04');
+            var ageDate = new Date(ageDifMs);
+            document.getElementById('age').innerText = Math.abs(ageDate.getUTCFullYear() - 1970);
+        })();
+
+    </script>
+</body>
+
+</html>
